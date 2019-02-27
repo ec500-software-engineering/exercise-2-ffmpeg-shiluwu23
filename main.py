@@ -4,7 +4,7 @@ import os
 import subprocess
 import json
 
-def ffprobe_sync(file):
+def ffprobe(file):
     """ get media metadata """
     meta = subprocess.check_output(['ffprobe', '-v', 'warning',
                                 	'-print_format', 'json',
