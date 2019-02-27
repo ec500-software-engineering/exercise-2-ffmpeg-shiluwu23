@@ -1,8 +1,6 @@
-#from probe import ffprobe_sync
 from pytest import approx
 import subprocess
 import json
-#from pathlib import Path
 import main as run
 
 def ffprobe(file):
@@ -34,5 +32,4 @@ def test_duration():
 
 
 if __name__ == '__main__':
-    run.video720()
     test_duration()
