@@ -6,7 +6,7 @@ import json
 
 def ffprobe(file):
     """ get media metadata """
-    meta = subprocess.check_output(['ffprobe', '-v', 'warning',
+    meta = subprocess.call(['ffprobe', '-v', 'warning',
                                 	'-print_format', 'json',
                                 	'-show_streams',
                                 	'-show_format',
