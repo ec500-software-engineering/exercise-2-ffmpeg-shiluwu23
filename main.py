@@ -1,17 +1,7 @@
 import asyncio
 import queue
 import os
-import subprocess
-import json
 
-def ffprobe(file):
-    """ get media metadata """
-    meta = subprocess.call(['ffprobe', '-v', 'warning',
-                                	'-print_format', 'json',
-                                	'-show_streams',
-                                	'-show_format',
-                                	str(file)], universal_newlines = True)
-    return json.loads(meta)
 
 async def video720(que):
     video = que.get()
