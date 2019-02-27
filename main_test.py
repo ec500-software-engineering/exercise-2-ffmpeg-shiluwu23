@@ -24,7 +24,7 @@ def test_duration():
     fnout_480 = './video000.mp4_480p.mp4'
     fnout_720 = './video000.mp4_720p.mp4'
 
-    orig_meta = main.ffprobe_sync(fnin)
+    orig_meta = main.ffprobe(fnin)
     orig_duration = float(orig_meta['streams'][0]['duration'])
 
     meta_480 = main.ffprobe(fnout_480)
