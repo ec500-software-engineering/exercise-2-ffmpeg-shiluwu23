@@ -1,6 +1,8 @@
 import asyncio
 import queue
 import os
+import subprocess
+import json
 
 def ffprobe_sync(file):
     """ get media metadata """
