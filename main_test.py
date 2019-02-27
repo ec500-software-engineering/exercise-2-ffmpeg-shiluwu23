@@ -27,8 +27,8 @@ def test_duration():
     orig_meta = main.ffprobe_sync(fnin)
     orig_duration = float(orig_meta['streams'][0]['duration'])
 
-    meta_480 = main.ffprobe_sync(fnout_480)
-    meta_720 = main.ffprobe_sync(fnout_720)
+    meta_480 = main.ffprobe(fnout_480)
+    meta_720 = main.ffprobe(fnout_720)
     duration_720 = float(meta_720['streams'][0]['duration'])
     duration_480 = float(meta_480['streams'][0]['duration'])
 
