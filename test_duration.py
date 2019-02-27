@@ -32,4 +32,5 @@ def test_duration():
 
 
 if __name__ == '__main__':
+    run.video720()
     test_duration()
