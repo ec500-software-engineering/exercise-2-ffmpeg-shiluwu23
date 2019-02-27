@@ -6,7 +6,7 @@ from pytest import approx
 import main
 
 '''
-def ffprobe_sync(filein: Path) -> dict:
+def ffprobe(filein: Path) -> dict:
     """ get media metadata """
     meta = subprocess.check_output(['ffprobe', '-v', 'warning',
                                 	'-print_format', 'json',
